@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity Web Player | Click, click, andclick!</title>
+    <title>Unity Web Player | Clickr</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
@@ -47,16 +47,16 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/Unity_Web_App.loader.js";
+      var loaderUrl = buildUrl + "/TelegramTestBuild.loader.js";
       var config = {
         arguments: [],
-        dataUrl: buildUrl + "/Unity_Web_App.data",
-        frameworkUrl: buildUrl + "/Unity_Web_App.framework.js",
-        codeUrl: buildUrl + "/Unity_Web_App.wasm",
+        dataUrl: buildUrl + "/TelegramTestBuild.data",
+        frameworkUrl: buildUrl + "/TelegramTestBuild.framework.js",
+        codeUrl: buildUrl + "/TelegramTestBuild.wasm",
         streamingAssetsUrl: "StreamingAssets",
-        companyName: "DefaultCompany",
-        productName: "Click, click, andclick!",
-        productVersion: "0.0-67",
+        companyName: "GamerGameGames",
+        productName: "Clickr",
+        productVersion: "0.2",
         showBanner: unityShowBanner,
         // errorHandler: function(err, url, line) {
         //    alert("error " + err + " occurred at line " + line);
@@ -112,9 +112,7 @@
           document.querySelector("#unity-progress-bar-full").style.width = 100 * progress + "%";
               }).then((unityInstance) => {
                 document.querySelector("#unity-loading-bar").style.display = "none";
-                /*document.querySelector("#unity-fullscreen-button").onclick = () => {
-                  unityInstance.SetFullscreen(1);
-                };*/
+             //
 
               }).catch((message) => {
                 alert(message);
